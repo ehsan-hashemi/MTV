@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پخش زنده - M TV</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- استایل آیفریم آپارات -->
+  <style>
+    .h_iframe-aparat_embed_frame { position: relative; }
+    .h_iframe-aparat_embed_frame .ratio { display: block; width: 100%; height: auto; }
+    .h_iframe-aparat_embed_frame iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      border: none;
+      /* در صورت وجود آرم آپارات، می‌توان سعی کرد با CSS آن را مخفی کرد؛ به عنوان مثال: */
+      /* filter: brightness(0.9); */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>پخش زنده</h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="../index.html">صفحه اصلی</a></li>
+      <li><a href="./" class="active">پخش زنده</a></li>
+      <li><a href="../schedule/">جدول پخش</a></li>
+      <li><a href="../archive/">آرشیو</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="video-section">
+      <div class="container">
+        <h2>تماشای پخش زنده</h2>
+        <div class="video-container">
+          <!-- استفاده از آیفریم آپارات -->
+          <div class="h_iframe-aparat_embed_frame">
+            <span style="display:block;padding-top:57%"></span>
+            <iframe scrolling="no" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+              src="https://www.aparat.com/embed/live/EhsanHashemi_1392"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش اطلاعات پخش: اکنون و بعدی -->
+    <section class="live-info">
+      <div class="container">
+        <div class="live-program">
+          <div class="label">اکنون:</div>
+          <div class="value" id="live-now">در حال بارگذاری...</div>
+        </div>
+        <div class="live-program">
+          <div class="label">بعدی:</div>
+          <div class="value" id="live-next">در حال بارگذاری...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        <a href="mailto:1392ehsan1392ehsan@gmail.com">1392ehsan1392ehsan@gmail.com</a> | 
+        <a href="tel:09143654519">09143654519</a>
+      </p>
+      <p>&copy; 2025 M TV</p>
+    </div>
+  </footer>  
+
+  <script src="../assets/js/live.js"></script>
+</body>
+</html>
